@@ -1,10 +1,24 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <NavBar :logo="logo_cliente" :alt="alt_logo" :nomeCliente="nome_cliente"/>
   <router-view/>
 </template>
+
+<script>
+import NavBar from './components/NavBar.vue'
+
+export default {
+  components: {
+      NavBar
+    },
+    data(){
+      return {
+        logo_cliente: "/img/logo.png",
+        alt_logo:"Logo cliente",
+        nome_cliente: "Dartt"
+      }
+    }
+}
+</script>
 
 <style>
 #app {

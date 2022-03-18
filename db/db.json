@@ -1,0 +1,215 @@
+{
+    "pedidos":[
+        {
+            "id":"12345",
+            "cliente":"Movine Indústria de Móveis LTDA",
+            "ambiente":"SUITE MASTER",    
+            "dataproducao":"17/03/2022",
+            "dataembalagem":"20/03/2022",
+            "datacarga":"20/03/2022",
+            "dataentrega":"17/03/2022",
+            "situacao":        {
+              "id": 3,
+              "tipo": "Atrasado"
+            },
+            "status":         {
+              "id": 2,
+              "tipo": "Em produção"
+            },
+            "pecas":[
+                {
+                    "codigo":"C003718303000",
+                    "tipo": "BAI",
+                    "descricao":"BASE INF COLUNA LIVRE",
+                    "pai":"M0126 - DORMITORIO FECHAMENTO L 1980x2530x1890"
+                },
+                {
+                    "codigo":"C003718303001",
+                    "tipo": "BAS",
+                    "descricao":"BAS SUP COLUNA LIVRE",
+                    "pai":"M0126 - DORMITORIO FECHAMENTO L 1980x2530x1890"
+                },
+
+                {
+                    "codigo":"C003718303012",
+                    "tipo": "BAINT",
+                    "descricao":"BASE INTERNA COLUNA LIVRE",
+                    "pai":"M0129 - DIVISOR DORMITORIO 414.033x573x18"
+                },
+
+                {
+                    "codigo":"C003718318002",
+                    "tipo": "LTG",
+                    "descricao":"LAT GAVETEIRO COLUNA LIVRE",
+                    "pai":"M0133 - GAVETERO INTERNO 449.95x1782x585"
+                },
+
+                {
+                    "codigo":"C003718309004",
+                    "tipo": "BATG",
+                    "descricao":"TAMPO DORMITORIO GAVETEIRO COLUNA LIVRE",
+                    "pai":"M0133 - TAMPO GAVETEIRO 449.95x575x18"
+                },
+                {
+                  "codigo":"C003718309004",
+                  "tipo": "BATG",
+                  "descricao":"TAMPO DORMITORIO GAVETEIRO COLUNA LIVRE",
+                  "pai":"M0133 - TAMPO GAVETEIRO 449.95x575x18"
+              },
+              {
+                "codigo":"C003718309004",
+                "tipo": "BATG",
+                "descricao":"TAMPO DORMITORIO GAVETEIRO COLUNA LIVRE",
+                "pai":"M0133 - TAMPO GAVETEIRO 449.95x575x18"
+            }
+
+            ]
+        },
+        {
+          "id":"54321",
+          "cliente":"Dlealp Indústria de Móveis LTDA",
+          "ambiente":"Banheiro",    
+          "dataproducao":"18/04/2022",
+          "dataembalagem":"20/04/2022",
+          "datacarga":"20/04/2022",
+          "dataentrega":"25/04/2022",
+          "situacao":        {
+            "id": 2,
+            "tipo": "Aproximando"
+          },
+          "status":         {
+            "id": 1,
+            "tipo": "Solicitado"
+          },
+          "pecas":[
+              {
+                  "codigo":"C003718303000",
+                  "tipo": "BAI",
+                  "descricao":"BASE INF COLUNA LIVRE",
+                  "pai":"M0126 - DORMITORIO FECHAMENTO L 1980x2530x1890"
+              },
+              {
+                  "codigo":"C003718303001",
+                  "tipo": "BAS",
+                  "descricao":"BAS SUP COLUNA LIVRE",
+                  "pai":"M0126 - DORMITORIO FECHAMENTO L 1980x2530x1890"
+              },
+
+              {
+                  "codigo":"C003718303012",
+                  "tipo": "BAINT",
+                  "descricao":"BASE INTERNA COLUNA LIVRE",
+                  "pai":"M0129 - DIVISOR DORMITORIO 414.033x573x18"
+              },
+
+              {
+                  "codigo":"C003718318002",
+                  "tipo": "LTG",
+                  "descricao":"LAT GAVETEIRO COLUNA LIVRE",
+                  "pai":"M0133 - GAVETERO INTERNO 449.95x1782x585"
+              },
+
+              {
+                  "codigo":"C003718309004",
+                  "tipo": "BATG",
+                  "descricao":"TAMPO DORMITORIO GAVETEIRO COLUNA LIVRE",
+                  "pai":"M0133 - TAMPO GAVETEIRO 449.95x575x18"
+              }
+
+          ]
+      },
+      {
+        "id":"8989",
+        "cliente":"3F1B Indústria de Móveis LTDA",
+        "ambiente":"COZINHA",    
+        "dataproducao":"18/05/2022",
+        "dataembalagem":"20/05/2022",
+        "datacarga":"20/05/2022",
+        "dataentrega":"25/05/2022",
+        "situacao":        {
+          "id": 1,
+          "tipo": "No prazo"
+        },
+        "status":         {
+          "id": 1,
+          "tipo": "Solicitado"
+        },
+        "pecas":[
+            {
+                "codigo":"C003718303000",
+                "tipo": "BAI",
+                "descricao":"BASE INF COLUNA LIVRE",
+                "pai":"M0126 - DORMITORIO FECHAMENTO L 1980x2530x1890"
+            },
+            {
+                "codigo":"C003718303001",
+                "tipo": "BAS",
+                "descricao":"BAS SUP COLUNA LIVRE",
+                "pai":"M0126 - DORMITORIO FECHAMENTO L 1980x2530x1890"
+            },
+
+            {
+                "codigo":"C003718303012",
+                "tipo": "BAINT",
+                "descricao":"BASE INTERNA COLUNA LIVRE",
+                "pai":"M0129 - DIVISOR DORMITORIO 414.033x573x18"
+            },
+
+            {
+                "codigo":"C003718318002",
+                "tipo": "LTG",
+                "descricao":"LAT GAVETEIRO COLUNA LIVRE",
+                "pai":"M0133 - GAVETERO INTERNO 449.95x1782x585"
+            },
+
+            {
+                "codigo":"C003718309004",
+                "tipo": "BATG",
+                "descricao":"TAMPO DORMITORIO GAVETEIRO COLUNA LIVRE",
+                "pai":"M0133 - TAMPO GAVETEIRO 449.95x575x18"
+            }
+
+        ]
+    }
+    ],
+    "situacao": [
+        {
+          "id": 1,
+          "tipo": "Solicitado"
+        },
+        {
+          "id": 2,
+          "tipo": "Em produção"
+        },
+        {
+          "id": 4,
+          "tipo": "Embalagem"
+        },
+        {
+          "id": 5,
+          "tipo": "Carregando"
+        },
+        {
+          "id": 6,
+          "tipo": "Montagem"
+        },
+        {
+            "id": 7,
+            "tipo": "Finalizado"
+        }
+      ],
+      "status": [
+        {
+          "id": 1,
+          "tipo": "No prazo"
+        },
+        {
+          "id": 2,
+          "tipo": "Aproximando"
+        },
+        {
+          "id": 3,
+          "tipo": "Atrasado"
+        }
+      ]
+}
