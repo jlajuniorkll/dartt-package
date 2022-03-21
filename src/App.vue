@@ -14,7 +14,7 @@ export default {
       return {
         logo_cliente: "/img/logo.png",
         alt_logo:"Logo cliente",
-        nome_cliente: "Dartt"
+        nome_cliente: ""
       }
     }
 }

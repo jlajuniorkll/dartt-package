@@ -2,7 +2,7 @@
 <nav class="navbar navbar-light bg-light fixed-top">
   <div class="container-fluid">
     <router-link class="navbar-brand" to="/">
-        <img :src="logo" :alt="alt" width="30" height="24">
+        <img :src="logo" :alt="alt" width="55" height="35">
         {{nomeCliente}}
     </router-link>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -19,7 +19,7 @@
               <router-link class="nav-link" aria-current="page" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-              <router-link class="nav-link" aria-current="page" to="/about">About</router-link>
+              <router-link class="nav-link" aria-current="page" to="/about">Calendário</router-link>
           </li>
           <!--Exemplo de DropDown Button dentro da NavBar-->
           <!--<li class="nav-item dropdown">

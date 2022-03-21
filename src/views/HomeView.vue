@@ -1,7 +1,8 @@
 <template>
 <div class="container-fluid" id="main-container">
-<div class="accordion accordion-flush" id="accordionFlushExample">
-  <div class="accordion-item" v-for="pedido in pedidos" :key="pedido.id">
+<h2>Dashboard</h2>
+<div class="accordion accordion-flush" id="accordionFlushExample" v-for="pedido in pedidos" :key="pedido.id">
+  <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" :data-bs-target="'#p'+pedido.id" aria-expanded="false" aria-controls="flush-collapseOne">
         <div class="container">
@@ -67,7 +68,7 @@ export default {
             situacao: null,
             getData: new Date(),
             dataHoje: null,
-            dataAproximada: null,            
+            dataAproximada: null,
     }
   },
 
@@ -79,21 +80,38 @@ export default {
       this.verificaSituacao(data);
     },
     async verificaSituacao(data){
-      this.dataHoje = moment(this.getData).format("DD/MM/YYYY");
+      this.dataHoje = moment(this.getData).format("YYYY/MM/DD");
       for(var i=0;i<data.length;i++){       
         if(data[i].situacao.id <= "7"){
           if(this.dataHoje > data[i].dataentrega){
-            console.log("atrasado");
+             this.updateSituacao(data[i].id,{
+                  "id": 3,
+                  "tipo": "Atrasado"
+                  });
           }else{
               if(this.dataHoje == data[i].dataentrega){
-                console.log("Chegando");              
+                  this.updateSituacao(data[i].id,{
+                    "id": 2,
+                    "tipo": "Aproximando"
+                  });         
               }else{
-                console.log("No prazo");
+                  this.updateSituacao(data[i].id,{
+                    "id": 1,
+                    "tipo": "No prazo"
+                  });  
               }
           }
         }
-
       }
+    },
+    async updateSituacao(id, situacao){
+      const data = JSON.stringify({situacao: situacao});
+      const req = await fetch(`http://localhost:3000/pedidos/${id}`, {
+        method: "PATCH",
+        headers: {"Content-type": "application/json"},
+        body: data
+      });
+      const res = await req.json();
     }
   },
   mounted() {
