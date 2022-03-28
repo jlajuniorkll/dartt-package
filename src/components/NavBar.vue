@@ -16,10 +16,13 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-              <router-link class="nav-link" aria-current="page" to="/">Home</router-link>
+              <router-link class="nav-link" aria-current="page" to="/">Dashboard</router-link>
           </li>
           <li class="nav-item">
               <router-link class="nav-link" aria-current="page" to="/about">Calendário</router-link>
+          </li>
+          <li class="nav-item">
+              <router-link class="nav-link" aria-current="page" to="/custom">Gerenciamento</router-link>
           </li>
           <!--Exemplo de DropDown Button dentro da NavBar-->
           <!--<li class="nav-item dropdown">

@@ -7,7 +7,7 @@
       "dataproducao": "17/03/2022",
       "dataembalagem": "20/03/2022",
       "datacarga": "20/03/2022",
-      "dataentrega": "2022/03/19",
+      "dataentrega": "2022/03/21",
       "situacao": {
         "id": 3,
         "tipo": "Atrasado"
@@ -68,7 +68,7 @@
       "dataproducao": "17/03/2022",
       "dataembalagem": "20/03/2022",
       "datacarga": "20/03/2022",
-      "dataentrega": "2022/03/21",
+      "dataentrega": "2022/03/23",
       "situacao": {
         "id": 2,
         "tipo": "Aproximando"
